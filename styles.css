@@ -120,6 +120,12 @@ section{padding:84px 0}
 .photo--card{aspect-ratio:16/10;margin-bottom:20px}
 .photo--wide{margin-top:34px;border:1px solid var(--line);box-shadow:var(--sh)}
 .about__img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:28px;border:1px solid var(--line);box-shadow:var(--sh)}
+.case{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:stretch}
+.case__pt{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px}
+.case__pt--b{border:2px solid var(--acc)}
+.case__pt b{display:block;font-family:var(--ff-h);font-size:26px;color:var(--sun);margin-bottom:8px}
+.case__pt p{color:var(--muted);font-size:15.5px}
+.case__arrow{align-self:center;font-size:34px;color:var(--acc)}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:26px 0}
 .stats div{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px}
 .stats b{display:block;font-family:var(--ff-h);font-size:32px;color:var(--acc);line-height:1.1}
@@ -185,6 +191,8 @@ section{padding:84px 0}
   .grid--4{grid-template-columns:repeat(2,1fr)}
   .idea{padding:32px}
   .about__img{max-width:420px}
+  .case{grid-template-columns:1fr}
+  .case__arrow{transform:rotate(90deg);justify-self:center}
 }
 @media (max-width:560px){
   .grid--4{grid-template-columns:1fr}
